@@ -1,0 +1,27 @@
+created: 20230603094152177
+gambar: https://http.cat/404.jpg
+kategori: tes
+modified: 20230812221520865
+published_date: 20230813061520864
+ringkasan: Ini adalah postingan yang pertama
+tags: Published
+title: Pertama
+type: text/vnd.tiddlywiki
+
+Ini adalah postingan pertama. Bagus nggak?
+
+''tebal'' //miring//
+
+!! judul
+
+!!! judul
+
+# satu
+# dua
+# tiga
+
+* empat
+* lima 
+* enam `kode`
+
+> Hello world...

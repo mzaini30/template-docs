@@ -12,6 +12,8 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^6.1.6"
+    "astro": "^6.1.6",
+    "degit": "^2.8.4",
+    "tiddlywiki": "^5.3.8"
   }
 }

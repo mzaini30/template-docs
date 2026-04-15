@@ -1,0 +1,19 @@
+[
+		{
+				"title" : "Kedua",
+				"published_date" : "20230813061524570",
+				"slug" : "kedua",
+				"text" : "<p>Tulisan yang lainnya.</p>",
+				"ringkasan" : "Kedua ya...",
+				"kategori" : "hai",
+				"gambar" : "https://http.cat/502.jpg"
+			},{
+				"title" : "Pertama",
+				"published_date" : "20230813061520864",
+				"slug" : "pertama",
+				"text" : "<p>Ini adalah postingan pertama. Bagus nggak?</p><p><strong>tebal</strong> <em>miring</em></p><h2 class=\"\">judul</h2><h3 class=\"\">judul</h3><ol><li>satu</li><li>dua</li><li>tiga</li></ol><ul><li>empat</li><li>lima </li><li>enam <code>kode</code></li></ul><blockquote><div>Hello world...</div></blockquote>",
+				"ringkasan" : "Ini adalah postingan yang pertama",
+				"kategori" : "tes",
+				"gambar" : "https://http.cat/404.jpg"
+			}
+]
