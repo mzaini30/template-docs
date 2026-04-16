@@ -1,0 +1,10 @@
+Aku mau di http://localhost:4321/ itu menampilkan dari ./src/tiddlers/published.json yang slug adalah index
+Kemudian untuk http://localhost:4321/[slugnya] itu ambil dari ./src/tiddlers/published.json untuk masing-masing slug  
+
+Styling pakai untuk tampilan mobile dan tampilan desktop bagus ya. Kasih background pemandangan. Jadi, dia itu kayak kertas yang berada di atas background. Mungkin si kertas ini pakai opacity sedikit transparan (maybe 0.9 atau 0.8)
+
+Terus, misalnya link seperti di ./src/tiddlers/published.json itu, contohnya ./#ini-link-yang-nggak-ada-ujungnya maka ke /ini-link-yang-nggak-ada-ujungnya (kasih .html kayaknya ya soalnya kalau Astro build jadi file-file HTML kan?)
+Untuk link yang ada ujungnya, itu pakai class tc-tiddlylink-resolves. Untuk yang nggak ada ujungnya, pakai class tc-tiddlylink-missing. Untuk link TiddlyWiki ini, dia selalu pakai class tc-tiddlylink yang menandakan kalau ini adalah internal link 
+Oh iya, link missing berarti kasih rel nofollow dan jangan sampai user klik karena memang nggak ada ujungnya kan?
+
+Buatkan juga Github Action untuk Astro build dan akan menyimpan hasil build di branch gh-pages

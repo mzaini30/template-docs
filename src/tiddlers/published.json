@@ -9,11 +9,11 @@
 				"gambar" : ""
 			},{
 				"title" : "Mau ke Mana ya?",
-				"published_date" : "20260416090828250",
+				"published_date" : "20260416100942870",
 				"slug" : "mau-ke-mana-ya",
-				"text" : "<p>Ini adalah <em>linknya</em></p><p><strike>Hehe...</strike></p><p>Garis <u>bawah</u></p>",
+				"text" : "<p>Ini adalah <em>linknya</em></p><p><strike>Hehe...</strike></p><p>Garis <u>bawah</u></p><p><a class=\"tc-tiddlylink tc-tiddlylink-missing\" href=\"./#ini-link-yang-nggak-ada-ujungnya\">Ini link yang nggak ada ujungnya</a></p>",
 				"ringkasan" : "",
 				"kategori" : "",
 				"gambar" : ""
 			}
-]f 
+]
