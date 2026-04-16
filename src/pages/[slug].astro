@@ -1,0 +1,51 @@
+---
+import Layout from '../layouts/Layout.astro';
+import published from '../tiddlers/published.json';
+import { processLinks } from '../utils/processLinks';
+
+export async function getStaticPaths() {
+  return published
+    .filter(item => item.slug !== 'index')
+    .map((item) => ({
+      params: { slug: item.slug },
+      props: { item },
+    }));
+}
+
+const { item } = Astro.props;
+const content = processLinks(item.text);
+---
+
+<Layout title={item.title}>
+  <div class="content" set:html={content}></div>
+  <div class="back-link">
+    <a href="/">← Kembali ke Beranda</a>
+  </div>
+</Layout>
+
+<style is:global>
+  .content p {
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+  
+  .content strike {
+    color: #888;
+  }
+
+  .back-link {
+    margin-top: 2rem;
+    border-top: 1px solid #eee;
+    padding-top: 1rem;
+  }
+
+  .back-link a {
+    color: #336699;
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+
+  .back-link a:hover {
+    text-decoration: underline;
+  }
+</style>

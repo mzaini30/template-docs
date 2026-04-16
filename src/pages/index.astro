@@ -1,17 +1,28 @@
 ---
+import Layout from '../layouts/Layout.astro';
+import published from '../tiddlers/published.json';
+import { processLinks } from '../utils/processLinks';
 
+const indexPage = published.find(item => item.slug === 'index');
+
+if (!indexPage) {
+	return Astro.redirect('/404');
+}
+
+const content = processLinks(indexPage.text);
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout title={indexPage.title}>
+	<div class="content" set:html={content}></div>
+</Layout>
+
+<style is:global>
+	.content p {
+		line-height: 1.6;
+		margin-bottom: 1rem;
+	}
+	
+	.content strike {
+		color: #888;
+	}
+</style>
